@@ -1,0 +1,151 @@
+body {
+  background-color: #FBF8EC;
+}
+
+.sec__1 {
+  background: url(/images/pages/about/Group\ 7105.png);
+  padding-top: 90px;
+  background-color: #FBF8EC;
+  width: 100% !important;
+}
+
+.sec1__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sec1__left h1 {
+  padding-top: 92px;
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.sec1__left p {
+  color: var(--main-primary, #F63);
+  font-family: "Rubik";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  padding-bottom: 96px;
+}
+
+.sec1__right {
+  width: 100%;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.info__wrapper {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.info__wrapper .box-1 {
+  max-width: 270px;
+}
+
+.info__wrapper .box {
+  display: flex;
+  gap: 10px;
+}
+
+.info__wrapper .box p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.info__wrapper .box h2 {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.info__wrapper .box-2 {
+  max-width: 355px;
+}
+
+.info__wrapper .box-3 {
+  max-width: 445px;
+}
+
+.sec2 {
+  margin-top: 140px;
+  padding-bottom: 140px;
+}
+
+.sec2 .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .info__wrapper .box p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 370px) {
+  .sec1__left h1 {
+    font-size: 25px;
+  }
+  .sec1__left p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1190px) {
+  .sec1__right img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .info__wrapper .box h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .info__wrapper {
+    flex-wrap: wrap;
+  }
+}
+.sec2 .textarea {
+  padding: 30px 80px;
+  background: url(https://e-commers-severyanochka-demo.netlify.app/assets/images/about-us/thanks-bg.png) center center no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  width: 100% !important;
+}
+
+.sec2 .textarea .typewriter h1 {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px !important;
+  line-height: 150%;
+  color: #70c05b;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 4.5s steps(40, end), blink-caret 1.75s step-end infinite;
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 1221px) {
+  .textarea {
+    display: none;
+  }
+}
